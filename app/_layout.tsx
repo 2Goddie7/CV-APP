@@ -2,6 +2,7 @@
 
 import { Stack } from "expo-router";
 import { CVProvider } from "../context/CVContext";
+import PhotoScreen from "./photo";
 
 export default function RootLayout() {
   return (
@@ -22,6 +23,12 @@ export default function RootLayout() {
           options={{
             title: "Crear CV",
             headerShown: true,
+          }}
+        />
+        <Stack.Screen
+          name="photo"
+          options={{
+            title: "Foto de perfil",
           }}
         />
         <Stack.Screen
